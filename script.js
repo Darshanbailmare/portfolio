@@ -23,32 +23,32 @@ const webProjects = [
     {
         title: "StudyHub",
         description: "A web application where student can make a list notes and can chat with study bot.",
-        technologies: ["ReactJS", "Tailwind CSS", "NodeJS","Express","JWT","MongoDB","API"],
-        image: "/MyPortfolio/images/StudyHub.png", // path to your project thumbnail
+        technologies: ["ReactJS", "Tailwind CSS", "NodeJS", "Express", "JWT", "MongoDB", "API"],
+        image: "https://ik.imagekit.io/tpcpce/Screenshot%202026-05-29%20205751.png", // path to your project thumbnail
         link: "https://studyhub-1-ofa0.onrender.com",
         github: "https://github.com/ashishhumane/StudyHub.git",
     },
     {
-        title: "VendorMitra",
-        description: "A website to bridge the gap between street vendor and supplier so that they can buy supplies in bulk from trusted vendors.",
-        technologies: ["ReactJS", "Tailwind CSS", "NodeJS","Express","JWT","MongoDB"],
-        image: "/MyPortfolio/images/VendorMitra.png",
-        link: "https://vendormitra-1.onrender.com",
-        github: "https://github.com/ashishhumane/VendorMitra.git",
+        title: "AI Resume Analyzer",
+        description: "An AI-powered platform that analyzes resumes against job descriptions, providing ATS scores, job-match percentages, missing skills, and personalized improvement suggestions using Gemini AI.",
+        technologies: ["ReactJS", "Tailwind CSS", "NodeJS", "ExpressJS", "MongoDB", "JWT", "Google OAuth 2.0", "Gemini AI"],
+        image: "https://ik.imagekit.io/tpcpce/Screenshot%202026-05-29%20205728.png",
+        link: "https://resume-analyser-client-xi.vercel.app",
+        github: "https://github.com/ashishhumane/ResumeAnalyser.git"
     },
     {
-        title: "Voice Assistant",
-        description: "A simple voice assistant built using JavaScript and the Web Speech API.The assistant listens to the user's voice, processes the input, and speaks back a response.",
-        technologies: ["HTML", "CSS", "JavaScript", "API"],
-        image: "/MyPortfolio/images/voice_assistant.jpg", // path to your project thumbnail
-        link: "https://my-voiceassistant.netlify.app/",
-        github: "https://github.com/ashishhumane/GroceryStore.git",
-    }
+    title: "Aptitude Portal",
+    description: "A scalable aptitude testing platform used by 500+ students for conducting online tests, managing student records, and processing results. Built with a microservices architecture, automated deployments, and cloud-based infrastructure.",
+    technologies: ["Node.js", "Express.js", "MongoDB", "Docker", "AWS EC2", "GitHub Actions", "Amazon SES"],
+    image: "https://ik.imagekit.io/tpcpce/Screenshot%202026-05-29%20205751.png",
+    link: "https://tpc-aptitude-frontend-pi.vercel.app",
+    github: "https://github.com/ashishhumane/tpc-aptitude-frontend.git",
+}
 ];
 
 
 const androidProjects = [
-    
+
 ];
 
 
@@ -135,15 +135,15 @@ webbtn.forEach(element => {
 
         if (element.id === "web") {
             rendorProjects(webProjects, element)
-            
+
         } else if (element.id === "mobile") {
             rendorProjects(androidProjects, element)
-            
-        } else if(element.id === "all"){
+
+        } else if (element.id === "all") {
             rendorProjects(webProjects, element)
             rendorProjects(androidProjects, element)
-        }else{
-             grid.textContent = 'no projects available'
+        } else {
+            grid.textContent = 'no projects available'
         }
     })
 })
